@@ -1,26 +1,130 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================================
+   Brand Design System — Pro Learning Center
+   Primary:   #F36C21 (Orange)
+   Secondary: #0B3C5D (Deep Navy)
+   Cream:     #FAF8F5
+   ============================================================ */
+
+@theme {
+  /* Brand Colors */
+  --color-primary:          #F36C21;
+  --color-primary-dark:     #d45a12;
+  --color-secondary:        #0B3C5D;
+  --color-secondary-dark:   #08304e;
+  --color-cream:            #FAF8F5;
+  --color-cream-dark:       #F0EDE8;
+
+  /* Neutral / Utility */
+  --color-background:       #ffffff;
+  --color-foreground:       #1a1a2e;
+  --color-muted:            #f4f4f5;
+  --color-muted-foreground: #71717a;
+  --color-accent:           #fff7ed;
+  --color-accent-foreground:#1a1a2e;
+  --color-border:           #e4e4e7;
+  --color-input:            #e4e4e7;
+  --color-ring:             #F36C21;
+
+  /* Fonts */
+  --font-sans:     var(--font-inter);
+  --font-playfair: var(--font-playfair);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* ---------- Base ---------- */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- Playfair Display shorthand ---------- */
+.font-playfair {
+  font-family: var(--font-playfair, 'Georgia', serif);
+}
+
+/* ---------- Smooth scrolling offset for sticky nav ---------- */
+:target {
+  scroll-margin-top: 88px;
+}
+
+/* ---------- Section Label ---------- */
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+/* ---------- Crosshair / Plus decoration ---------- */
+.crosshair {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.crosshair::before,
+.crosshair::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+  border-radius: 1px;
+}
+.crosshair::before {
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.crosshair::after {
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* ---------- Plus grid pattern (css only) ---------- */
+.plus-pattern {
+  background-image:
+    linear-gradient(var(--color-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* ---------- Keyframes ---------- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+@keyframes ping-slow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float       { animation: float 4s ease-in-out infinite; }
+.animate-slide-up    { animation: slide-up 0.5s ease forwards; }
+.animate-ping-slow   { animation: ping-slow 2s ease-in-out infinite; }
+.animate-fade-in-up  { animation: fade-in-up 0.6s ease forwards; }
