@@ -50,21 +50,13 @@ export function Navbar() {
           <a
             href="#home"
             onClick={(e) => scrollToSection(e, "#home")}
-            className="flex items-center gap-3 group"
+            className="flex items-center group"
           >
-            <div className="relative">
-              <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center shadow-lg shadow-primary/30 group-hover:shadow-primary/50 transition-shadow">
-                <span className="text-white font-bold text-sm leading-none tracking-tight">PL</span>
-              </div>
-            </div>
-            <div className="leading-tight">
-              <p className="font-bold text-[15px] text-secondary tracking-tight">
-                PRO LEARNING
-              </p>
-              <p className="text-[9px] font-semibold text-primary uppercase tracking-[0.2em]">
-                Center
-              </p>
-            </div>
+            <img
+              src="/logo.png"
+              alt="Pro Learning Center"
+              className="h-25 w-auto object-contain transition-opacity group-hover:opacity-90"
+            />
           </a>
 
           {/* Desktop Nav */}

@@ -20,15 +20,15 @@ export function Footer() {
           
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center shadow-lg shadow-primary/30">
-                <span className="text-white font-bold text-sm leading-none">PL</span>
+            <a href="#home" className="inline-flex mb-6">
+              <div className="bg-white/95 rounded-xl px-4 py-2 inline-flex">
+                <img
+                  src="/logo-transparent.png"
+                  alt="Pro Learning Center"
+                  className="h-10 w-auto object-contain"
+                />
               </div>
-              <div className="leading-tight">
-                <p className="font-bold text-[15px] tracking-tight">PRO LEARNING</p>
-                <p className="text-[9px] font-semibold text-primary uppercase tracking-[0.2em]">Center</p>
-              </div>
-            </div>
+            </a>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-6">
               Premier Science &amp; Mathematics Coaching for Classes IX–XII. Strong fundamentals,
               board exam excellence, and lifelong academic success.
