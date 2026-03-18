@@ -28,6 +28,10 @@ export const metadata: Metadata = {
     "class 10",
     "class 12",
   ],
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
