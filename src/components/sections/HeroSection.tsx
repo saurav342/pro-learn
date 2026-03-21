@@ -1,7 +1,7 @@
 "use client";
 
 import { FadeIn } from "@/components/ui/fade-in";
-import { ChevronRight, PhoneCall, GraduationCap } from "lucide-react";
+import { ChevronRight, PhoneCall, GraduationCap, MonitorPlay, Building2 } from "lucide-react";
 
 function CrosshairIcon({ className = "" }: { className?: string }) {
   return (
@@ -83,20 +83,40 @@ export function HeroSection() {
               </div>
             </FadeIn>
 
-            {/* Class Badges */}
+            {/* Program Types & Class Badges */}
             <FadeIn direction="up" delay={0.45}>
-              <div>
-                <p className="section-label mb-4">Coaching for Classes</p>
-                <div className="flex flex-wrap gap-3">
-                  {["IX", "X", "XI", "XII"].map((cls) => (
-                    <div
-                      key={cls}
-                      className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white border-2 border-gray-100 shadow-sm hover:border-primary/30 hover:shadow-md transition-all cursor-default"
-                    >
-                      <GraduationCap className="w-4 h-4 text-primary" />
-                      <span className="font-bold text-secondary text-sm">Class {cls}</span>
+              <div className="space-y-6">
+                <div>
+                  <p className="section-label mb-4">Available Programs</p>
+                  <div className="flex flex-wrap gap-3">
+                    <div className="flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-primary/5 text-primary border-2 border-primary/20 shadow-sm hover:bg-primary/10 transition-all cursor-default relative overflow-hidden group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
+                      <div className="relative flex items-center justify-center">
+                        <span className="animate-ping absolute inline-flex h-4 w-4 rounded-full bg-primary/60 opacity-75"></span>
+                        <MonitorPlay className="w-4 h-4 relative z-10" />
+                      </div>
+                      <span className="font-bold text-sm tracking-wide">Live Online</span>
                     </div>
-                  ))}
+                    <div className="flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-white text-secondary border-2 border-gray-100 shadow-sm hover:border-secondary/30 transition-all cursor-default">
+                      <Building2 className="w-4 h-4 text-secondary/70" />
+                      <span className="font-bold text-sm tracking-wide">Offline Center</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="section-label mb-4">Coaching for Classes</p>
+                  <div className="flex flex-wrap gap-3">
+                    {["IX", "X", "XI", "XII"].map((cls) => (
+                      <div
+                        key={cls}
+                        className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white border-2 border-gray-100 shadow-sm hover:border-primary/30 hover:shadow-md transition-all cursor-default"
+                      >
+                        <GraduationCap className="w-4 h-4 text-primary" />
+                        <span className="font-bold text-secondary text-sm">Class {cls}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </FadeIn>

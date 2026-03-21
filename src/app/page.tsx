@@ -1,6 +1,8 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { ProgramTypesSection } from "@/components/sections/ProgramTypesSection";
+import { AboutSection } from "@/components/sections/AboutSection";
 import { CoursesSection } from "@/components/sections/CoursesSection";
 import { WhyChooseUsSection } from "@/components/sections/WhyChooseUsSection";
 import { FacultySection } from "@/components/sections/FacultySection";
@@ -15,6 +17,8 @@ export default function Home() {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
+        <ProgramTypesSection />
+        <AboutSection />
         <CoursesSection />
         <WhyChooseUsSection />
         <FacultySection />

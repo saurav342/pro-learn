@@ -16,18 +16,33 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Pro Learning Center | Science & Mathematics Coaching",
+  title: "Pro Learning Center | Best Science & Maths CBSE Coaching",
   description:
-    "Premier Science & Mathematics Coaching in Greater Noida for Classes IX–XII. Board Exam orientation, experienced faculty, and strong fundamentals.",
+    "Pro Learning Center offers CBSE Science and Mathematics coaching for Classes 6–12 in Greater Noida, with offline batches and online weekend classes. Expert faculty, small batches, board exam preparation.",
   keywords: [
-    "coaching",
-    "science",
-    "mathematics",
-    "CBSE",
-    "Greater Noida",
-    "class 10",
-    "class 12",
+    "CBSE coaching classes",
+    "online coaching for CBSE students",
+    "weekend online classes",
+    "best tuition near me",
+    "Class 10 coaching",
+    "Class 12 coaching",
+    "science classes near me",
+    "maths coaching",
+    "board exam preparation",
+    "coaching institute near me",
+    "online maths tuition",
+    "online science tuition",
+    "Greater Noida coaching",
+    "CBSE class 9 10 coaching",
+    "CBSE class 11 12 coaching",
+    "Applied Mathematics coaching",
   ],
+  openGraph: {
+    title: "Pro Learning Center | Best Science & Maths CBSE Coaching",
+    description:
+      "Trusted CBSE coaching for Classes 6–12. Offline + Online Weekend Batches. Expert faculty, small group sizes, 95% success rate.",
+    type: "website",
+  },
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
