@@ -8,7 +8,7 @@ export function FacultySection() {
       <span className="crosshair absolute top-10 right-20 !w-8 !h-8 text-gray-300 opacity-40 hidden md:block" />
       <span className="crosshair absolute bottom-10 left-16 !w-6 !h-6 text-gray-300 opacity-30 hidden md:block" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         {/* Header */}
         <FadeIn>
           <div className="mb-16">

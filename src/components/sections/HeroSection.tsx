@@ -31,7 +31,7 @@ export function HeroSection() {
       <CrosshairIcon className="absolute top-[72%] left-[44%] !w-6 !h-6 opacity-20" />
       <CrosshairIcon className="absolute top-[12%] right-[10%] !w-7 !h-7 opacity-25" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 w-full pt-32 pb-16 md:pt-44 md:pb-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 w-full pt-32 pb-16 md:pt-44 md:pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 items-center">
           
           {/* ── LEFT: Text Content ── */}

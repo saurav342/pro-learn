@@ -6,7 +6,7 @@ import { MapPin, Laptop, CheckCircle2, ArrowRight } from "lucide-react";
 export function ProgramTypesSection() {
   return (
     <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         
         {/* Section Header */}
         <FadeIn>
@@ -27,8 +27,8 @@ export function ProgramTypesSection() {
           
           {/* Offline Center Card */}
           <FadeIn direction="up" delay={0.1}>
-            <div className="group relative bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-              <div className="h-64 sm:h-72 overflow-hidden relative">
+            <div className="group relative bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full">
+              <div className="aspect-video sm:aspect-[4/3] md:aspect-square lg:aspect-[4/3] overflow-hidden relative shrink-0">
                 <img 
                   src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2070&auto=format&fit=crop" 
                   alt="Students studying in a classroom" 
@@ -45,8 +45,8 @@ export function ProgramTypesSection() {
                   </div>
                 </div>
               </div>
-              <div className="p-8">
-                <ul className="space-y-4 mb-8">
+              <div className="p-8 flex flex-col flex-1">
+                <ul className="space-y-4 mb-8 flex-1">
                   {[
                     "Face-to-face interaction with expert faculty",
                     "Structured, distraction-free environment",
@@ -69,8 +69,8 @@ export function ProgramTypesSection() {
 
           {/* Online Weekend Classes Card */}
           <FadeIn direction="up" delay={0.2}>
-            <div className="group relative bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-              <div className="h-64 sm:h-72 overflow-hidden relative">
+            <div className="group relative bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full">
+              <div className="aspect-video sm:aspect-[4/3] md:aspect-square lg:aspect-[4/3] overflow-hidden relative shrink-0">
                 <img 
                   src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop" 
                   alt="Student using a laptop at home" 
@@ -93,8 +93,8 @@ export function ProgramTypesSection() {
                   </div>
                 </div>
               </div>
-              <div className="p-8">
-                <ul className="space-y-4 mb-8">
+              <div className="p-8 flex flex-col flex-1">
+                <ul className="space-y-4 mb-8 flex-1">
                   {[
                     "Live interactive concept teaching",
                     "Flexible Saturday & Sunday schedule",

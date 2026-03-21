@@ -44,7 +44,7 @@ export function Navbar() {
           : "bg-transparent py-5"
       )}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a
@@ -55,7 +55,7 @@ export function Navbar() {
             <img
               src="/logo.png"
               alt="Pro Learning Center"
-              className="h-25 w-auto object-contain transition-opacity group-hover:opacity-90"
+              className="h-16 md:h-20 lg:h-24 w-auto object-contain transition-opacity group-hover:opacity-90"
             />
           </a>
 
@@ -90,11 +90,11 @@ export function Navbar() {
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden text-foreground p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden flex items-center justify-center text-foreground p-3 -mr-1 rounded-lg hover:bg-gray-100 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
@@ -106,7 +106,7 @@ export function Navbar() {
           isMobileMenuOpen ? "max-h-[420px] opacity-100" : "max-h-0 opacity-0 border-transparent shadow-none"
         )}
       >
-        <ul className="flex flex-col py-5 px-6 gap-1">
+        <ul className="flex flex-col py-5 px-4 sm:px-6 gap-1">
           {navLinks.map((link) => (
             <li key={link.name}>
               <a

@@ -61,7 +61,7 @@ export function CoursesSection() {
       <span className="crosshair absolute top-10 right-16 !w-7 !h-7 text-gray-300 opacity-40 hidden md:block" />
       <span className="crosshair absolute bottom-12 left-12 !w-6 !h-6 text-gray-300 opacity-30 hidden md:block" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         {/* Header */}
         <FadeIn>
           <div className="mb-16">
@@ -114,10 +114,10 @@ export function CoursesSection() {
           <FadeIn direction="left" delay={0.15}>
             <div
               key={course.id}
-              className="relative rounded-3xl overflow-hidden shadow-2xl border border-white bg-white"
+              className="relative rounded-3xl overflow-hidden shadow-2xl border border-white bg-white flex flex-col h-full"
             >
               {/* Photo */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative aspect-[4/3] sm:aspect-[16/9] lg:aspect-auto lg:h-[320px] overflow-hidden shrink-0">
                 <img
                   src={course.image}
                   alt={course.label}

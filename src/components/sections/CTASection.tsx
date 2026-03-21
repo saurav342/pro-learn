@@ -29,7 +29,7 @@ export function CTASection() {
       {/* Top border accent */}
       <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-primary to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 py-24 lg:py-36 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-20 md:py-24 lg:py-36 grid lg:grid-cols-2 gap-16 items-center">
         {/* LEFT — Headline */}
         <FadeIn>
           <div>
@@ -40,12 +40,12 @@ export function CTASection() {
             </div>
 
             <h2 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6">
-              Don't Miss<br />
+              Don&apos;t Miss<br />
               <span className="text-primary italic">Your Chance.</span>
             </h2>
 
             <p className="text-white/65 text-lg leading-relaxed max-w-md">
-              Seats fill up fast every batch. Join Greater Noida's most trusted
+              Seats fill up fast every batch. Join Greater Noida&apos;s most trusted
               Science &amp; Maths coaching—and start your journey to a top rank today.
             </p>
 
@@ -60,7 +60,7 @@ export function CTASection() {
 
         {/* RIGHT — Card */}
         <FadeIn delay={0.15}>
-          <div className="relative bg-white/5 border border-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-10 shadow-2xl">
+          <div className="relative bg-white/5 border border-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-10 shadow-2xl">
             {/* Glow ring */}
             <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-primary/30 via-transparent to-transparent pointer-events-none" />
 
@@ -68,11 +68,11 @@ export function CTASection() {
               New Batch Starting Soon
             </p>
             <p className="font-playfair text-3xl font-bold text-white mb-1">
-              Before It's Too Late!
+              Before It&apos;s Too Late!
             </p>
             <p className="text-white/60 text-sm leading-relaxed mb-8">
               Reserve your seat for the upcoming batch — call us or fill in the
-              enquiry form and we'll get back to you within minutes.
+              enquiry form and we&apos;ll get back to you within minutes.
             </p>
 
             {/* Stats row */}

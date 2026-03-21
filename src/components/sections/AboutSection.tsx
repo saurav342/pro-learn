@@ -62,7 +62,7 @@ export function AboutSection() {
       <span className="crosshair absolute top-12 left-10 !w-8 !h-8 text-gray-300 opacity-50 hidden md:block" />
       <span className="crosshair absolute bottom-16 right-10 !w-6 !h-6 text-gray-300 opacity-40 hidden md:block" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 space-y-16 md:space-y-24">
 
         {/* ─── Section header ─── */}
         <FadeIn>
@@ -197,7 +197,7 @@ export function AboutSection() {
                 <span className="text-primary italic">Live &amp; Flexible</span>
               </h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Can't attend regular offline sessions? Our{" "}
+                Can&apos;t attend regular offline sessions? Our{" "}
                 <strong className="text-secondary">
                   online weekend classes for CBSE students
                 </strong>{" "}
@@ -260,7 +260,7 @@ export function AboutSection() {
 
         {/* ─── Goal Banner ─── */}
         <FadeIn delay={0.05}>
-          <div className="relative rounded-3xl overflow-hidden bg-secondary px-8 py-12 lg:px-16 lg:py-14 flex flex-col lg:flex-row items-center gap-8 text-center lg:text-left">
+          <div className="relative rounded-3xl overflow-hidden bg-secondary px-6 py-10 sm:px-8 sm:py-12 lg:px-16 lg:py-14 flex flex-col lg:flex-row items-center gap-8 text-center lg:text-left">
             {/* Decorative crosshairs inside banner */}
             <span className="crosshair absolute top-6 right-10 !w-7 !h-7 text-white opacity-10 hidden lg:block" />
             <span className="crosshair absolute bottom-6 left-20 !w-5 !h-5 text-white opacity-10 hidden lg:block" />

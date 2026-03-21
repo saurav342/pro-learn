@@ -35,7 +35,7 @@ export function ResultsSection() {
       <div className="absolute -top-20 -left-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 relative z-10">
         <FadeIn>
           <div className="text-center mb-16">
             <p className="section-label text-primary flex items-center justify-center gap-3 mb-4">

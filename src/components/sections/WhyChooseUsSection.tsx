@@ -41,7 +41,7 @@ export function WhyChooseUsSection() {
       <span className="crosshair absolute top-16 left-10 !w-8 !h-8 text-gray-200 opacity-60 hidden md:block" />
       <span className="crosshair absolute bottom-16 right-10 !w-6 !h-6 text-gray-200 opacity-50 hidden md:block" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
           {/* ── Image side ── */}
@@ -92,7 +92,7 @@ export function WhyChooseUsSection() {
                 Why Choose Us
               </p>
               <h2 className="font-playfair text-4xl md:text-5xl font-bold text-secondary leading-tight mb-4">
-                We Don't Just Teach,<br />
+                We Don&apos;t Just Teach,<br />
                 <span className="text-primary italic">We Build Careers.</span>
               </h2>
               <p className="text-muted-foreground mb-10 leading-relaxed">

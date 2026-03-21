@@ -40,7 +40,7 @@ export function ContactSection() {
       <span className="crosshair absolute top-10 left-20 !w-8 !h-8 text-gray-300 opacity-40 hidden md:block" />
       <span className="crosshair absolute bottom-10 right-20 !w-6 !h-6 text-gray-300 opacity-30 hidden md:block" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         {/* Header */}
         <FadeIn>
           <div className="mb-16">
@@ -61,7 +61,7 @@ export function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 rounded-3xl overflow-hidden shadow-2xl border border-white bg-white">
           {/* ── Left: Info Panel ── */}
           <FadeIn direction="right" className="h-full">
-            <div className="h-full bg-secondary text-white p-10 md:p-14 flex flex-col justify-between relative overflow-hidden">
+            <div className="h-full bg-secondary text-white p-6 sm:p-10 md:p-14 flex flex-col justify-between relative overflow-hidden">
               <div className="absolute inset-0 opacity-[0.06] bg-[radial-gradient(ellipse_at_top_left,_white_0%,_transparent_60%)]" />
               <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
 
@@ -115,7 +115,7 @@ export function ContactSection() {
 
           {/* ── Right: Form ── */}
           <FadeIn direction="left">
-            <div className="p-10 md:p-14">
+            <div className="p-6 sm:p-10 md:p-14">
               <h3 className="font-playfair text-2xl font-bold text-secondary mb-8">Send Us a Message</h3>
 
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -223,7 +223,7 @@ export function ContactSection() {
                     <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold text-sm">Thank you for your interest!</p>
-                      <p className="text-xs mt-0.5">Your inquiry has been sent. We'll contact you within 24 hours.</p>
+                      <p className="text-xs mt-0.5">Your inquiry has been sent. We&apos;ll contact you within 24 hours.</p>
                     </div>
                   </div>
                 )}

@@ -13,9 +13,9 @@ const navLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-secondary text-white">
+    <footer className="bg-secondary text-white pb-[env(safe-area-inset-bottom)]">
       {/* Top: main grid */}
-      <div className="max-w-7xl mx-auto px-6 md:px-10 pt-16 pb-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 pt-16 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-14">
           
           {/* Brand */}
@@ -33,20 +33,20 @@ export function Footer() {
               Premier Science &amp; Mathematics Coaching for Classes IX–XII. Strong fundamentals,
               board exam excellence, and lifelong academic success.
             </p>
-            <div className="flex gap-3">
+            <div className="flex gap-4">
               <button
                 onClick={() => (window.location.href = "tel:+918851748983")}
                 aria-label="Phone"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
+                className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors shrink-0"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-5 h-5" />
               </button>
               <button
                 onClick={() => window.open("https://wa.me/918851748983", "_blank")}
                 aria-label="WhatsApp"
-                className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center hover:bg-green-500 transition-colors"
+                className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center hover:bg-green-500 transition-colors shrink-0 group relative"
               >
-                <MessageCircle className="w-4 h-4 text-green-400 hover:text-white" />
+                <MessageCircle className="w-5 h-5 text-green-400 group-hover:text-white transition-colors" />
               </button>
             </div>
           </div>
